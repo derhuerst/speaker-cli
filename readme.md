@@ -24,7 +24,11 @@ npm install derhuerst/speaker-cli
 ## Usage
 
 ```js
-todo
+Usage:
+    speaker
+
+Examples:
+    cat some-audio.pcm | speaker
 ```
 
 

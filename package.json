@@ -1,8 +1,11 @@
 {
+	"preferGlobal": true,
 	"name": "speaker-cli",
 	"description": "Command line tool to listen to what you pipe inside.",
 	"version": "0.1.0",
-	"main": "index.js",
+	"bin": {
+		"speaker": "./cli.js"
+	},
 	"files": [
 		"index.js"
 	],
@@ -22,13 +25,7 @@
 		"node": ">=6"
 	},
 	"dependencies": {
-	},
-	"devDependencies": {
-		"tape": "^4.6.3",
-		"tap-min": "^1.2.1"
-	},
-	"scripts": {
-		"test": "node test.js | tap-min",
-		"prepublishOnly": "npm test"
+		"minimist": "^1.2.0",
+		"speaker": "^0.3.0"
 	}
 }
