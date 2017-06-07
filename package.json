@@ -2,9 +2,9 @@
 	"preferGlobal": true,
 	"name": "speaker-cli",
 	"description": "Command line tool to listen to what you pipe inside.",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"bin": {
-		"speaker": "./cli.js"
+		"speaker": "./index.js"
 	},
 	"files": [
 		"index.js"
