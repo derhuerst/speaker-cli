@@ -1,0 +1,34 @@
+{
+	"name": "speaker-cli",
+	"description": "Command line tool to listen to what you pipe inside.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"speaker",
+		"pcm",
+		"audio",
+		"stdin",
+		"pipe"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/speaker-cli",
+	"repository": "derhuerst/speaker-cli",
+	"bugs": "https://github.com/derhuerst/speaker-cli/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"tape": "^4.6.3",
+		"tap-min": "^1.2.1"
+	},
+	"scripts": {
+		"test": "node test.js | tap-min",
+		"prepublishOnly": "npm test"
+	}
+}
