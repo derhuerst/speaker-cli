@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 'use strict'
 
-const minimist = require('minimist')
+const mri = require('mri')
 const Speaker = require('speaker')
 
 const pkg = require('./package.json')
 
-const argv = minimist(process.argv.slice(2))
+const argv = mri(process.argv.slice(2), {
+	boolean: ['help', 'version']
+})
 
 if (argv.help || argv.h) {
 	process.stdout.write(`
