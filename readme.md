@@ -5,19 +5,22 @@
 ```shell
 npm i -g speaker-cli
 # convert any audio file and play it
-cat foo.mp3 | ffmpeg -i pipe:0 -f s16le -acodec pcm_s16le - | speaker
+ffmpeg -i some-audio.mp3 -f s16le -acodec pcm_s16le - | speaker
 ```
 
 [![npm version](https://img.shields.io/npm/v/speaker-cli.svg)](https://www.npmjs.com/package/speaker-cli)
 ![ISC-licensed](https://img.shields.io/github/license/derhuerst/speaker-cli.svg)
 [![chat on gitter](https://badges.gitter.im/derhuerst.svg)](https://gitter.im/derhuerst)
+[![support me on Patreon](https://img.shields.io/badge/support%20me-on%20patreon-fa7664.svg)](https://patreon.com/derhuerst)
 
 
 ## Installing
 
 ```shell
-npm install derhuerst/speaker-cli
+npm install -g speaker-cli
 ```
+
+Or use [`npx`](https://npmjs.com/package/npx). ✨
 
 
 ## Usage
@@ -29,6 +32,11 @@ Usage:
 Examples:
     cat some-audio.pcm | speaker
 ```
+
+
+## Related
+
+- [`speaker`](https://github.com/TooTallNate/node-speaker) – The library used by this tool.
 
 
 ## Contributing

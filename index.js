@@ -7,7 +7,7 @@ const Speaker = require('speaker')
 const pkg = require('./package.json')
 
 const argv = mri(process.argv.slice(2), {
-	boolean: ['help', 'version']
+	boolean: ['help', 'h', 'version', 'v']
 })
 
 if (argv.help || argv.h) {
