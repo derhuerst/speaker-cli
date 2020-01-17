@@ -2,7 +2,7 @@
 	"preferGlobal": true,
 	"name": "speaker-cli",
 	"description": "Command line tool to listen to what you pipe inside.",
-	"version": "0.1.1",
+	"version": "1.0.0",
 	"bin": {
 		"speaker": "./index.js"
 	},
@@ -22,10 +22,10 @@
 	"bugs": "https://github.com/derhuerst/speaker-cli/issues",
 	"license": "ISC",
 	"engines": {
-		"node": ">=6"
+		"node": ">=10"
 	},
 	"dependencies": {
 		"mri": "^1.1.0",
-		"speaker": "^0.3.0"
+		"speaker": "^0.5.1"
 	}
 }
